@@ -1,0 +1,57 @@
+.offer
+    background:  url('../../img/707_kuhna_48bea9_7432.png') no-repeat
+    background-position: center right
+    background-size: contain
+    position: relative
+    &:before
+        content: ''
+        width: 50%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: white
+    &-block
+        position: relative
+        width: 50%
+        padding-right: 90px
+        &__title
+            font-family: Museo Sans Bold
+            line-height: 35px
+            width: 365px
+            font-size: 23px
+            margin-bottom: 24px
+            margin-top: 0
+        &__subtitle
+            font-size: 19px;
+            display: block
+            width: 300px
+            margin-bottom: 30px
+    &__input
+        margin-bottom: 30px
+        &:first-child
+            margin-right: 10px
+    &__button
+        padding: 27px 101px
+        width: 100%
+
+    &__form
+        width: 100%
+
+@media (max-width: 1200px)
+    .offer
+        background-size: cover
+        &-block
+            width: 100%
+            padding-right: 0
+        &__input
+            width: 100%
+            margin-bottom: 10px
+        &__button
+            font-size: 12px
+@media (max-width: 768px)
+    .offer
+        background: #fff
+        &-block
+            width: 100%
+            padding-right: 0

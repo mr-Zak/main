@@ -1,8 +1,25 @@
+*
+    box-sizing: border-box
 body
     font-family: Museo Sans Light
     color: $text-color
 .container
     width: 1170px
     margin: auto
-.button-logo
-    margin-left: 30px
+.button
+    border-radius: 10px
+    border: none
+    background-color: $main-color
+    font-family: Museo Sans Bold
+    &:hover
+        background-color: lighten($main-color, 10%)
+        cursor: pointer
+.input
+    border: solid 1px $border-color
+    padding: 25px
+    font-size: 14px
+    border-radius: 10px
+    width: 240px
+.section
+    padding: 90px 0
+    
