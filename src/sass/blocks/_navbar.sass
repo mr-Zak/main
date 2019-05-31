@@ -1,0 +1,39 @@
+.block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 10px
+    margin-bottom: 10px
+    &-info
+        display: flex
+        align-items: center
+.contacts
+    display: flex
+    flex-direction: column
+    text-align: right
+    line-height: 1
+.button__logo
+    background-color: $main-color
+    border: none
+    border-radius: 10px
+    width: 170px
+    height: 49px
+    font-family: Museo Sans Bold
+    font-size: 13px
+.phone
+    color: $text-color
+    text-decoration: none
+    font-family: Museo Sans Bold
+    font-size: 20px
+.addres
+    color: $text-color
+    font-weight: 300
+    font-size: 13px
+
+@media (max-width: 1200px)
+    .container
+        width: 768px
+    
+@media (max-width: 768px)
+    .container
+        width: 540px

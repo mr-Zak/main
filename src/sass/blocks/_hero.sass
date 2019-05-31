@@ -1,0 +1,79 @@
+.hero
+    background-color: $section-color
+    display:
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-image
+        justify-content: flex-end
+        margin: 50px 0
+        padding-bottom: 32px 
+
+    &-text
+        flex-basis: 50%
+        padding-right: 140px
+        margin-bottom: 95px
+        &__title
+            font-size: 40px;
+            line-height: 49px;
+            font-family: Museo Sans Bold;
+            margin-top: 80px;
+            margin-bottom: 30px;
+            color: $text-color
+        &__subtitle
+            font-size: 19px;
+            line-height: 49px;
+            margin-bottom: 55px;
+            display: inline-block;
+            font-family: Museo Sans Bold;
+            color: $text-color
+    &-list
+        margin: 0
+        padding: 0
+        &__items
+            display: flex
+            align-items: center
+            margin-bottom: 25px
+        &__image
+            border: 2px solid $main-color
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50%
+            min-width: 40px
+            min-height: 40px
+            margin-right: 30px
+        &__text
+            max-width: 300px
+@media (max-width: 1200px)
+    .hero
+        &-block
+            flex-direction: column
+            justify-content: center
+        &-list
+            margin-bottom: 44px
+        &-text
+            padding-right: 10px
+            margin-bottom: 10px
+            justify-content: center
+            align-items: center
+        &-image
+            margin-top: 0
+@media (max-width: 768px)
+    .hero
+        &-text
+            &__title
+                font-size: 20px
+                line-height: 1.4
+                margin-bottom: 15px
+            &__subtitle
+                font-size: 13px
+                margin-bottom: 28px
+        &-list
+            &__items
+                margin-bottom: 20px
+            &__text
+                font-size: 12px
+            &__image
+                margin-right: 15px
