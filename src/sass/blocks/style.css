@@ -44,7 +44,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: right;
-  line-height: 1;
+  line-height: 20px;
 }
 
 .button__logo {
@@ -181,6 +181,8 @@ body {
 
 .hero-list__text {
   max-width: 300px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 @media (max-width: 1200px) {
