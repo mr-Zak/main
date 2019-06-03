@@ -10,4 +10,6 @@ $(document).ready(function(){
     close.on('click', function(){
         modal.removeClass('modal_active');
     });
+
+    
 });

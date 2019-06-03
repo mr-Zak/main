@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="sass/blocks/style.css">
     <title>14</title>
 </head>
@@ -13,7 +15,7 @@
     <section class="navbar">
         <!--Зона расположения контента-->
         <div class="container">
-            <div class="block">
+            <div class="block" id="special">
                 <!--логотип-->
                 <div class="block-logo">
                     <img src="img/Слой_23.png" alt="">
@@ -95,6 +97,29 @@
         <!-- /.container -->
     </section>
     <!-- /.offer -->
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="portfolio-title">Работая с 2007 года,<br>
+                мы сделали более 500 ремонтов в квартирах и домах</h2>
+            <div class="slider">
+                <div class="slider__item"><img class="slider__image" src="../src/img/Slide1.png" alt=""></div>
+                <div class="slider__item"><img class="slider__image" src="../src/img/Slide2.png" alt=""></div>
+                <div class="slider__item"><img class="slider__image" src="../src/img/Slide3.png" alt=""></div>
+                <div class="slider__item"><img class="slider__image" src="../src/img/Slide1.png" alt=""></div>
+                <div class="slider__item"><img class="slider__image" src="../src/img/Slide2.png" alt=""></div>
+                <div class="slider__item"><img class="slider__image" src="../src/img/Slide3.png" alt=""></div>
+            </div>
+            <div class="arrows portfolio__arrows">
+                <div class="arrows-left">
+                    <img src="img/left-arrow.png" alt="">
+                </div>
+                <div class="arrows-right">
+                    <img src="img/right-arrow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /кнопка доп задание -->
     <div class="modal" id="modal">
         <div class="modal-dialog">
             <button class="modal-dialog__close" id="close">&times</button>
@@ -105,5 +130,32 @@
     <!-- /.modal -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/modal.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: $('.arrows-left'),
+                nextArrow: $('.arrows-right'),
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 </html>
