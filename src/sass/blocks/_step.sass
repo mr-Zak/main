@@ -1,0 +1,56 @@
+.step
+    &__title
+        text-align: center
+        font-family: Museo Sans Bold
+        margin-bottom: 59px
+    &__subtitle
+        text-align: center
+        display: block
+        margin-bottom: 58px
+    &-box
+        display: flex
+        justify-content: space-between
+.steps
+    flex-basis: 20%
+    text-align: center
+    position: relative
+    &:after
+        content: ''
+        width: 72px
+        height: 25px
+        position: absolute
+        background: url('../../../src/img/arrow.png')
+        top: -10px
+        right: -15%
+    &:last-child
+        &:after
+            display: none
+    &__image
+        width: 100px
+        height: 100px
+        border: 3px solid $main-color
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: auto
+        border-radius: 50%
+        margin-bottom: 30px
+    &__text
+        font-size: 14px
+        max-width: 150px
+        margin: auto
+@media (max-width: 768px)
+    .steps
+        margin-bottom: 30px
+        &:after
+            display: none
+    .step-box
+        flex-direction: column
+@media (max-width: 1200px)
+    .steps
+        margin-bottom: 30px
+        flex-basis: 50%
+        &:after
+            display: none
+    .step-box
+        justify-content: center
