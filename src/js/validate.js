@@ -15,11 +15,42 @@ $(document).ready(function(){
                 required: true
             }
         },
-          messages: {
+        messages: {
             name: {
               required: "Введите ваше имя",
               minlength: jQuery.validator.format("Осталось букв:{0}"),
-              maxlength: "Максимум букв 15"
+              maxlength: "Максимум 15 букв"
+            },
+            email: {
+                required: "Введите ваш email",
+                email: "Введите корректный email"
+            },
+            phone: {
+                required: "Введите ваш телефон"
+            }
+          }
+    });
+    $("#newuser").validate({
+        rules: {
+            name: {
+              required: true,
+              minlength: 2,
+              maxlength: 15
+            },
+          
+            email: {
+                required: true,
+                email: true
+            },
+            phone: {
+                required: true
+            }
+        },
+        messages: {
+            name: {
+              required: "Введите ваше имя",
+              minlength: jQuery.validator.format("Осталось букв:{0}"),
+              maxlength: "Максимум 15 букв"
             },
             email: {
                 required: "Введите ваш email",
