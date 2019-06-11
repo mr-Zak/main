@@ -6,14 +6,9 @@ $(document).ready(function(){
               minlength: 2,
               maxlength: 15
             },
-          
-            email: {
-                required: true,
-                email: true
-            },
             phone: {
                 required: true
-            }
+            }  
         },
         messages: {
             name: {
@@ -21,54 +16,44 @@ $(document).ready(function(){
               minlength: jQuery.validator.format("Осталось букв:{0}"),
               maxlength: "Максимум 15 букв"
             },
-            email: {
-                required: "Введите ваш email",
-                email: "Введите корректный email"
-            },
-            phone: {
+             phone: {
                 required: "Введите ваш телефон"
             }
-          }
+        }
     });
+
     $("#newuser").validate({
         rules: {
-            name: {
+            username: {
               required: true,
               minlength: 2,
               maxlength: 15
             },
           
-            email: {
+            myemail: {
                 required: true,
                 email: true
             },
-            phone: {
+            iphone: {
                 required: true
             }
         },
         messages: {
-            name: {
+            username: {
               required: "Введите ваше имя",
               minlength: jQuery.validator.format("Осталось букв:{0}"),
               maxlength: "Максимум 15 букв"
             },
-            email: {
+            myemail: {
                 required: "Введите ваш email",
                 email: "Введите корректный email"
             },
-            phone: {
+            iphone: {
                 required: "Введите ваш телефон"
             }
           }
     });
-    $(".phone").mask("8 (999) 999-99-99");
+    
+    $(".zphone").mask("8 (999) 999-99-99");
 
-    $("#userForm").validate({
-        rules: {
-            username: {
-                required: true,
-                minlength: 2
-            }    
-        }
-    });
 });

@@ -38,7 +38,6 @@
     &__button
         padding: 27px 101px
         width: 100%
-
     &__form
         width: 100%
 .form-down
@@ -65,18 +64,46 @@
         text-decoration: none
         color: $text-color
         text-align: center
+#phone-error
+    position: absolute
+    padding-top: 76px
+    left: 291px
+#name-error
+    position: absolute
+    padding-top: 74px
+    left: 54px
 
 @media (max-width: 1200px)
     .offer
         background-size: cover
         &-block
-            width: 100%
+            width: 50%
             padding-right: 0
         &__input
             width: 100%
-            margin-bottom: 10px
         &__button
             font-size: 12px
+            margin-bottom: 10px
+        &__form
+            width: 90%
+        &__down
+            justify-content: space-between
+    .down-phone
+        &__info
+            font-size: 14px
+        &__number
+             font-size: 14px
+    .down-text
+        &__info
+             font-size: 14px
+    #name-error
+        top: 261px
+        padding-top: 0
+        left: 54px
+    #phone-error
+        padding-top: 0px
+        top: 357px
+        left: 53px
 @media (max-width: 768px)
     .offer
         background: #fff
