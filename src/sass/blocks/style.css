@@ -443,6 +443,26 @@ body {
     width: 100%;
     padding-right: 0;
   }
+  .offer__from {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form-down {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .down-text {
+    text-align: left;
+  }
+  .down-phone__info {
+    text-align: left;
+  }
+  .down-phone__number {
+    text-align: left;
+  }
 }
 
 .modal {
@@ -635,13 +655,13 @@ body {
 .step__title {
   text-align: center;
   font-family: Museo Sans Bold;
-  margin-bottom: 59px;
+  margin-bottom: 65px;
 }
 
 .step__subtitle {
   text-align: center;
   display: block;
-  margin-bottom: 58px;
+  margin-bottom: 75px;
 }
 
 .step-box {
